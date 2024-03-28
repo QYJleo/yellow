@@ -14,6 +14,6 @@ hostname = footprint-api.quthing.com
 var body = $response.body;
 var obj = JSON.parse(body);
 
-body.data.validVip = true;
+obj.data.validVip = true;
 body = JSON.stringify(obj);
 $done({body});
