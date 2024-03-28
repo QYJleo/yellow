@@ -1,6 +1,5 @@
-var body = $response.body;
-var obj = JSON.parse(body);
+var body = JSON.parse($response.body);
 
-obj.validVip = true;
-body = JSON.stringify(obj);
-$done({body});
+body.data.validVip = true,
+
+$done({ body: JSON.stringify(body) });
