@@ -2,7 +2,7 @@
 
 [rewrite_local]
 
-^https:\/\/footprint-api\.quthing\.com\/vip\/state url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/lgzj.js
+^https:\/\/footprint-api\.quthing\.com\/vip\/state url script-response-body https://raw.githubusercontent.com/QYJleo/yellow/main/lgzj.js
 
 [mitm]
 
