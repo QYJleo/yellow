@@ -10,13 +10,9 @@ hostname = footprint-api.quthing.com
 
 *************************************/
 
+var body = $response.body;
+var obj = JSON.parse(body);
 
-var body = JSON.parse($response.body);
-
-body.data.trialPeriod = false,
-body.data.vipType = 7,
-body.data.validVip = true,
-body.data.expireTime = 4102372800000,
-body.data.vipCount = 999999999,
-
-$done({ body: JSON.stringify(body) });
+obj.data.validVip = true,
+body = JSON.stringify(obj);
+$done({body});
