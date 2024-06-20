@@ -1,4 +1,4 @@
-let header = $request.headers;
+let headers = $request.headers;
 const isQuanX = typeof $task !== "undefined";
 
 //if (isQuanX) {
